@@ -1,0 +1,11 @@
+
+<div *ngFor="let sub of subreddit" >
+  <div class="panel-body">
+  <h3><a href="https://www.reddit.com/search?q=nba">{{sub.title}}</a></h3>
+<button (click)="delete(tap)">Delete Post</button>
+
+</div>
+</div>
+<!-- <input [(ngModel)]="selectedTitle.title">post
+<button (click)="add(tap)">Add A Post</button> -->
+<app-add-post></app-add-post>
